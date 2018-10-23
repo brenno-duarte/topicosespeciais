@@ -23,6 +23,8 @@ public class Pedido implements Serializable{
 	@JsonFormat(pattern="dd/MM/yyyy HH:mm")
 	private Date instante;
 	
+	
+	
 	@ManyToOne
 	@JoinColumn(name="cliente_id")
 	private Cliente cliente;
@@ -30,6 +32,5 @@ public class Pedido implements Serializable{
 	@ManyToOne
 	@JoinColumn(name="endereco_de_entrega_id")
 	private Endereco enderecoEntrega;
-	 
 	
 }
